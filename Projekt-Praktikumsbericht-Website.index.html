@@ -1,9 +1,48 @@
 <!DOCTYPE html>
+<html lang="en">
+
 
 <head>
-    <title> JulianReisinger-Betriebspraktikum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLprojekt</title>
+    <link rel="stylesheet" href="ProjektWebsiteentwicklung.styles.css">
 </head>
 
+
 <body>
-    <h1>Praktikumoderso</h1>
+    <div class="banner"> 
+    </div>
+
+    <div class="img">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfoAAABkCAMAAABZ0AL8AAAAeFBMVEX///8AAAAwMDDa2tr8/PxycnKLi4umpqbj4+Pt7e3R0dHKysq6urq/v78sLCwpKSkODg7l5eV6enr09PRAQEBpaWmampqurq6FhYWenp5/f38dHR3q6upubm6UlJQfHx9ISEhVVVVgYGBaWlo5OTlMTEwXFxcLCwvwK+r6AAAOaElEQVR4nO1d6YKqvBJUQXbGUVSQcd/m/d/wittAurIS5pzvHuqnYOh0JelOp5MMBj169OjRo0ePHj169OjRo0ePHj3+w9gOP+sYJup/jZm/zrqTskcH8IZNaFHfxLg7KXt0gJ76fxY99f8seur/WfTU/7Poqf9n8fvUZ+sgcIJp6JoJ/KfgVnIHwTr704JYw29SH8bLzfnr9fr3x8lLgjayi+Guo9RferPZeDMez7xVHk8NW1uQeMfR50vu63mziv8fGsCvUR8XH0OA6zi13/3dyB+P0NfOZbLWKypLNp+opPnWsS62ulBOmi+9cnZDsb21aceoJf4O9dEMqe+FRWwiOQ+ZfxB9bDjaqg816UlQ0G4Z2pRbDeukuCBhLp5uo/4V6hPYA+uY5Jy/pk1EzadOsizKcpbWhYKKYXBWqmW2lRa04bWipCl3Iu+WTE2hKYyKnUiaa6nVh7qnPr8qkDH8gh92mbeOtWdB8f38dfn+LZmofKvSki+rXcZqBmMB+xor91A+0LD/WLEvrLcqiizV7VDX1MfSHv/CHAjNqnDxfpKNqZacueq3btiJe4ivXNAW/NsC9UzbDBaq8uxVu3631NcJkoMqkUt9Wv/1Sb06W095+f6lViP6oG3WNvWZ0FdisY94H2mgU+pjpbH+B3PWb+JR37TCD+oLvW/d8DHl1GylWRAZnC1Tn7IPZZipuPxdUr/UlXg4ZNorh3qG5RWqiBKgYXSP2uVs2CLYF1pRX+pX7Euh43dIvdZgj7+PqWc974r6xORjkPtQ2Tup4ZIJ5W5DvXswqdiQN2f6QXfUm0ncFBlST1i+UZ8JSvyafHxMvvGzTzI1n2oaqSfOmUjuNtSrzFYRiBVi0Rn1PInP422e5P52fOa8UOceUT9FlUSGfjLL42n28uXcMPLBSH5gKrXmSDW8lKtKbu/ImVqfXYHcLahX9uwJZP2+K+qxvdyktc7hxtgzq01OEPW0yaxQpy+Qtl06C2hOojijh1c3nWEC6bjUv8M+NKae63FOLsfF4niB0fEnJPa+I+qRZ/Lt09lUugcv/jjegHrgO66oDTjzopouoa0xUiM7P09pKT4wILX6W6OeDnE37Iq0ZqeyeImUWEG8OtIN9TmQY8kp5Yu8OXo/pNQjXawG7LR3JKg0y/1S8OyGL0r8HaAJ/oyw1qgHawhH0JlDHHMW50h3Qn1ApZjz5tADwttwWL4eUeqRIVkN2AiMMKDF+HG7nyegxc64jWhKLc+7jraod8gneLM2HDwTfrYT6ukAJGx/1AC/6seqcEx1MayoZ0aOL6Hc7OfeygQunshVovP//fsR+8SQetIrzvxYDRpphWrvgnpKpScuiUg9eT4g1MNF1BWrN9Ztb4K1GW/haOGcwf4Fwv2rpdiinggkWiZGgWxRVK8D6qmXLN2XQ0zV079lVYgnVsvBfl7HuRB/jfn7yzWn4VKZMlwy5mdYbkPqyRgn7kLAGIrabgfUkynbWV4WMREPE0tU+MalyGNnGt6hm+bDFPX9/JnwKBmrBnxuLFFP+rF4UQ64WKJOYJ/6kHyf7+G9QXT4iEVxqJ/kbXLjSKGPwsgEcSQppwJp5hn+hBn1pHTJTP1ANHURvG2fejJ4S4bfB9hp1fX+K6ZeGqIUg3hzDwNK1mlV1r1JO19iuc2oJ3NNie9B4z8Twdv2qSefV+qhEawlpL5tJh9xKkMowFypMNa+PiYXlqgnxltiglhGhsKojnXqibPELmhywEZ27l46ol5DQgwSsbtTT+ZRat8hZgI3WUvUf4vdGtcJWAjetk697iD1AvlfFYoF1B+lJUmwIUWG8Etq7gSJLt4XFy1RT0U9tak5A5b6ZaQM1v8cw0orqpDaqRyWpqBEIRwQ766oJ2Ol2njPqW9Xbt5ttmQv/d8ouQXjTj1RoYqfXIGMnFX3pooVR2vEcIMcLiWHSA9KzukNJNSQIrktTe4qnFJLW39sU0/8+0vgKIE4X5Vdo9TLkqjdLJwyX4ziOM1X3mbPS8KoqCf+vacmd0DSv6v4lSXqgdt2x9F3LGxZsk39wV55DqJeoMNpUhxGJjk2oSh2pI2zPepFuUf7Mo/a7f6xTb294qrKExV+8lq7m/MWreUI0RKZOVBLMozh8zKZXvg4btPAdACwTD0N5ZljBlTIcb5c+R4pAULjrE6I2B71Slnh39UAYGD/LVNPAiMtsAcqXMBKpJykS0WEwEVpATRaGVIvGvEZ7Ba6W78tU6+9WUCAnUtVCP1uo6zvGkKULmKO0mKWjiY9Z09t400X1KN8AWNkVIVgg5ura+Sv7Jwp5GWRmuFkMy2Tpq/JMDbdc9cCFfW6W5aEmFIVgpUbXebPGWuVQvNkd/gBm9Sb+J9fKyXPzzL1Bnut+HCoCum0Xne0n9HpcqjffkSYWM3DNzOhKoublqm36S6hXk+o13TNL5UtBNTr7KyVwWqv58d1xJjIjf7f3OuBrWep1wnF7A6rACrTcq+3autvWJtZI+2NV3kWKiJjhyLbtn4EVMhSz2tqu/1xXBZFUZZl4W2Xfh47P3lcgPqDRbkL65usc3iSk4IcWtS3XLSlHv7IFJONAvWwzsdkLfRzAPVkyfhqLPcut3+0guvre/r4vI8aLFNPnJJP9fIAZNQjH+gkTQUE1JN5vWKCiarcrQ9UGaQG80/xNM8y9TSa12qJSUY9cO8lTR0JjqJ57XIi9KlXmMtkCU3dEONLqHzL1NMYvu5pbg3IFEIDuCpXcbBjBYrhKySQ68gtHYlIyBavTjv5WGfoFy5x207QIl9vlUQpoZ7uvdxxCmqA5TlEo1UbsQ16PakKnzXXyb2TWgMQqsM29WSC3CpzWkI9nfJKj8OrwE4LQrRO0i4RjC1NmlZFqiKrSeaky41sUVeYuG+bepJO1iqNUkI9TWBSSl5gPYTqT+SIAvlZNCKwpUlzU8msWKkRD9xp7M/2/IVLUfa2beppdK2NnyehnsSj1Cw0m41dUU8cxnaZv+xEXEokCduoUf+AGyQzfE7oXvAv29RTP69N3ryEerMpGRGxop422VbJj6zdkwlG1aZD/R3wCGpuVtOggzx8Yn5a5dCKFUICMfINkgNgJirqLei+DnYaJnM/aRTU4PNrMPUXWEDr1NPQaovMcQn1pKqcQ1uaII3zrh4y4rYKRhEtiFdTXJpNatTy6BFGAuVbp55OuFSspn+dNHG9zwx0qVeI54BpwZ166jKqOHrHHSP390PXmtvPwILnrabLGQN5yyabygRNzv52S7rOpDC1p2eA3VWoS72Kraf+0J16kAYnt/Z0R/vzLBdamiiog/IxfHDKh2jf7ANkDeVXqacOk8jX4P3nsWlH180TRy7vAJuZHvaQBoVxDmgd9MStl7dBup/A5cnQYSE+ShiUBgVJI/rNAR91K1lAHPS4x2groZ6Ok1LxUfLgg3rQ9WT2FmRRvOLWVDTuaE2PZXl+m7pNUoNGhiFBY+mAeqBdydIxPb/o6WNJqKeDxVUySMO00acXDA7NE0diQhpKeR8lBRoSR7VrfByzD9clZSErohGBPro4QQvURTjrAkdrPl0sCfVAv+KpJD5e/KlPcBSN0E1BvfVnsQo8hIMIL8PMh/tZRAekVGDjCXvBu11Qj7LJBNdhAT5eUTnZyh3IXjnxzX3MOVD21ZVQshrfzc8AubUWjsaXI1nGdA5YpEdNQdqYeLpEVCmyEJ0cmYiyZOec9ZAMVf7lnMioR72Yc6mNm3JT3F7UuygYyrsmJQIbOxseODzoraxrIUtQ3Ws1Rc2Hp8cbQhrSEcVUOqE+g0uKW6REON69PSIZ9ThLnZ4im8WlYAvu24DCbWPwLi4XprM2FM3ZjXIukiiYBlGyPfAletYUJ52WOAViDYIDe/jmE90cj4y33l2XrNORwiTon0FNmrvC6ckjL33eYpoFcV5IUq1/fCec5TlPmEabrWCeJCOcXoI36yD5fHmGp5xx3F0H3+sojKh0dCg6bwPWMXkLnUUezjeoHWstpV6wOeV7MhpNUF/fs1P7mtvMuXjgcxa/XwpTTp4UmyCktXHmzPaWR025GRm7U+FX9ygmie9xl+3FPm9XVyHw8/s/9+PCKxfcLINd/bYE9iFxkvX3SZ7Jjuz6jInfVXeHWVGUJ+79kjQApHH72mfGNpRHTdvtXBZPBTu7AMXgmqY7dnV5FZIVRddAIBxonRtflCa+cIBCf8pplN9rMkY8a9pmT4skP6S7a4/M9vXMxdcHUeo1D3PYAsmancNsI05JBKtwUPvzBzjX41VT8+3fslhkh5edmWy4ZtZfFKgfTDW2puwiVGdmXNRNeebIdcdB5c/3UASPemPu/9yNVzdE2vuFpFvqkIpDZVfac2GdWZOoe0Pqs0VBKBD3CLtwqTfcwionstOLTTO9m7potEKJetU7TRevyYWM+oGjZ/D5l6QM5GPf6wxEPvUm+6xHCvkxHd9knQovXG8CxEwVqR848s2o4x9lSKnX8q7Oku3MKG0KVEhAvW4XUkxU2+4+6rgqnmhbIbo2/rqDno6ruvd2i9aY3EnjEx9f3JB6DK9GeWG0rNObjBu5Lxv05bXikQ0fCrk8Ma9hftZiXCLqb0XoxIcWChcQ/Aqylbznf0Hi9TBdctQz8oyyA6cKZnquOEg6qKxDI0joBtMGSOBTdeYxbnmKsF1IdomeNIYaIcKkuDTX0PdlYt4FMl/c12YaTcqNvXrfH40T7aMunULuNu99Swfo2kOWjDlbRBaJZWEzJ05y3/fztOVBohWmPseQTMpYf2/JOrpJluex8Qm3kSe6Zvvo/y0jPYtp4jXCoJ+HIvmrBicOnLxsGOvJcZu2b1SmCOPtkUb297Pc3mnpXSGbOlEUOcGfU54ZwuAuN7HBfwbTKM395XK5qga34O+QqUePHj169OjRo0ePHj169OjRo0cn+B8zKdfoM9uZVwAAAABJRU5ErkJggg==" alt="Projektfoto" class="bild">
+    </div> 
+
+    <!-- hat noch keine Wirkung-->
+    <div class="image">
+        <img src="data:https://www.recovery-worldwide.com/imgs/1/9/6/0/7/3/5/t_02_Hanau_site_Heraeus_Precious_Metals-3e1b3e3aff5d0ea7.jpeg" class="bild2">
+    </div>
+
+
+    <div class="container">
+        <div>
+            <h1>                       <br>Lieber Herr Bernges,<br>
+                 <br>Ich dachte es könnte für Sie interessant sein, neben meinem Praktikumsbericht,
+                   eventuell auch noch ein weiteres Ergebnis meines Praktikums zu erhalten.<br>
+            <br>Diese HTML-Website habe ich während meines Betriebpraktikums bei Heraeus Hanau in der IT-Abteilung erstellt.<br>
+            <br>Zuvor hatte ich nicht viele Vorkenntnisse, jedoch ist es mir schnell gelungen diese zu erlernen und nun Websites zu erstellen.<br></h1>
+        </div>
+    </div>
+
+    <div class screenshota>
+        <img src="c:\Users\oth11177\Pictures\Screenshots\Screenshot (1).png"
+    </div>
+        
+    <div class screenshotb>
+        <img src="C:\Users\oth11177\Pictures\Screenshots\Screenshot (2).png"
+    </div>
+        
+    
+
 </body>
+</html>
